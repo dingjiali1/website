@@ -1,0 +1,44 @@
+<div class="flag">
+    <div class="star big-star"></div>
+    <div class="star small-star" style="--angle: 0;"></div>
+    <div class="star small-star" style="--angle: 72deg;"></div>
+    <div class="star small-star" style="--angle: 144deg;"></div>
+    <div class="star small-star" style="--angle: 216deg;"></div>
+</div>
+.flag {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.big-star {
+    width: 100px;
+    height: 100px;
+    border-bottom-width: 173.2px;
+    margin-top: -86.6px;
+    margin-left: -50px;
+}
+
+.small-star {
+    width: 30px;
+    height: 30px;
+    border-bottom-width: 51.96px;
+    margin-top: -25.98px;
+    margin-left: -15px;
+    transform: rotate(var(--angle)) translateY(-120px);
+}
