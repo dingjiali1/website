@@ -1,11 +1,10 @@
-//solve quadratic equation ax^2 + bx +c = 0,here a,b and c are coefficients
 function(a, b, c) //
 {
-    if (a == 0)
+    if (a === 0)
     {
-        if (b == 0)
+        if (b === 0)
         {
-            if (c == 0)
+            if (c === 0)
             {
                 document.write("a=b=c: any x solves the equation");
             }
@@ -26,7 +25,7 @@ function(a, b, c) //
            {
                document.write("delta < 0:the equation has no real solution");
            }
-           else if(delta == 0)
+           else if(delta === 0)
            {
                document.write("delta = 0:the only solution is x =" + (-b/2/a));
            }
@@ -35,7 +34,7 @@ function(a, b, c) //
                document.write("delta > 0:two solution x1 =" + ((-b + Math.sqrt(delta))/2/a) + ",x2 = "+((-b - Math.sqrt(delta))/2/a));
            }
        }
-   }
+   };
    
    
    quadratic(0, 0, 0);
@@ -104,23 +103,7 @@ function(a, b, c) //
    document.writ("Feb is month" + monthName2Number('Feb') + "<br>");
    document.writ("xyz is month" + monthName2Number('xyz') + "<br>");
    
-   let mn2d = {"Jan":1, "Feb":2, "Mar":3,
-       "Apr":4, "May":5, "June":6,
-       "July":7, "Aug":8, "Sep":9,
-       "Oct":10, "Nov":11, "Dec":12};
-   
-   function monthName2Num(monthName)
-   {
-       let i = mn2d[monthName];
-       if (i== null) return -1;
-       return i;
-   }
-   
-   /* for (initializations; bool expression; increments)
-    * {
-    *   statements  // iteration tasks
-    *   }
-    */
+
        
    
    
