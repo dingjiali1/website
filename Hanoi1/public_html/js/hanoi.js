@@ -1,9 +1,12 @@
+/* global x, y */
+
 const THICKNESS=60;
 const TOPWIDTH=100;
 const INDENT=10;
 const GAP=20;
-var RATIO=0.1;
+var RATIO=0.1;0
 N=8;
+
 
 function layer(n,i)
 {
@@ -55,12 +58,7 @@ function disk(w,h,i)
        return s;
 }
 
-function moveDisk(i)
-{
-    let disk=document.getElementById('layer'+i);
-    disk.style.animation='diskmove 2s 1';
-}
-tower(N);
+
 //moveDisk(2);
 //setTimeout('moveDisk(4)',2000);
 
@@ -71,7 +69,7 @@ for(let j=0;j<alldiv.length;j++)
 var My={
     println:function(x){document.writeln(x+'<br>');},
     $:function(x){return document.getElementById(x);}
-}
+};
 let instructions=[];
 function move(n,source,destin,temp)
 {
@@ -129,9 +127,18 @@ let kftext="@keyframes diskmoveK{0%{left:X;top:Y}\n30%{left:X;top:0px}\n70%{left
     disk.style.left=x1;
     disk.style.top=y1;
 }
+tower(N);
 movedisk(0);
+
+
 for(let i=1;i<instructions.length;i++)
 setTimeout('movedisk('+i+')',i*1010);
+
+
+
+
+
+
 
 
 
