@@ -1,0 +1,58 @@
+//class,static,``(backtick),${},#,extends,super
+//constructor
+//key teminologies:inheritanc(inherit)
+//encaptulation(seal),
+//polymorphism(multiple state)
+/instance--object--instance of class
+//base class,private,method
+
+class Cynlinder
+{
+	static THICKNESS=60;
+	static TOPWIDTH=60;
+	static RATIO=0.3;
+	static WIDTH=200;
+	id;
+	x;
+	y;
+	width;
+	height;//instance variable
+	type;//diak/pillar
+	#temp;//accessible within the class
+	handle;//the handle to the div
+	constructor(x,y,w,h,type)
+	{
+		this.id=id;
+		this.x=x;
+		this.y=y;
+		this.width=w;
+		this.height=h;
+		this.type=type;
+	}
+	makehtml()
+	{
+		let ele=document.create('div');
+		ele.id=this.type+this.id;
+		ele.style.className='layer';
+		ele.style.left=this.x+'px';
+		ele.style.top=this.y+'px';
+		ele.style.width=Cynlinder.WIDTH+'px';
+		ele.style.height=this.height+'px';
+		ele.innerHTML=this.makecynlinder();
+		document.body.appendChild(ele);
+		this.handle='ele';
+	}
+	makecynlinder()
+	{
+		let f=(Cynlinder.WIDTH-this.width)/2;
+		let h=Cynlinder.RATIO*this.width;
+		let hw=this.width/2,hh=h/2;
+		let s=`<div style='position:relative;z-index:2;top:0px;left:${f}px;
+		width:${this.width}px;height:${h}px;border-radius:${hw}px/${hh}px;background-color:blue></div>`
+		<div style='position:relative;top:-${hh}px;left:${f}px;z-index:1;
+		width:${this.width}px;height:100%;border-radius:${hw}px/${hh}px;background-color:blue></div>
+		<div style='position:relative;z-index:0;top:-${h}px;left:${f}px;
+		width:${this.width}px;height:${h}px;border-radius:${hw}px/${hh}px;background-color:blue></div>
+	}
+
+}
