@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuestionActivity" android:id="@+id/mbar" >
+    <item  android:id="@+id/cancel" android:icon="@drawable/cancel" app:showAsAction="@string/action" android:title="@string/Cancel" />
+    <item  android:id="@+id/save"   android:icon="@drawable/save"   app:showAsAction="@string/action"  android:title="@string/save" />
+ 
+
+</menu>

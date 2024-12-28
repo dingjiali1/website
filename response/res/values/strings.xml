@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Enquirer</string>
+    <string name="rip">Enquire IP</string>
+    <string name="uid">My Name/Id</string>
+    <string name="appname">Response</string>
+    <string name="instre">Quiz/vote/survey/collection/file transfer:
+1.You and audiance are on same WIFI
+2.Tap number to enter/announce orally
+  /project to show questions
+3.Tap +Q icon to add more questions
+4. Optionally enter answers above
+5.Tap Ear icon to start receiving
+6.Announce this IP after it appears
+7.At end,tap Stop Listening,Save icon
+</string>
+    <string name="instrr">Quiz/vote/survey/collection/file transfer:
+1.You and Enquirer are on same wifi
+2.Enter your ID, and Enquirer IP
+3.Listen/tap number to view questions
+4.Enter answer for question, tap ->
+5.To send file, tap cell, File icon
+6.Send photo, tap cell, Camera icon
+</string>
+    <string name="enquirer">Enquire</string>
+    <string name="response">Response</string>
+    <string name="question">Question</string>
+    <string name="oral"> may have been asked orally or shown on projected screen. You may write down here</string>
+    <string name="enterquestiontext">Question  enquirer asked:</string>
+    <string name="QuestionText">Edit Question</string>
+    <string name="Enter">Enter Question </string>
+    <string name="wait">Enter your name/ID, and Enquirer short IP</string>
+    <string name="enter">Enter answer then tap -></string>
+    <string name="Received">Session Details</string>
+    <string name="NewSession">New Session</string>
+    <string name="New">New</string>
+    <string name="Browse">Browse</string>
+    <string name="Delete">Clear Data</string>
+    <string name="Report">Send Report</string>
+    <string name="Enquirer">Enquirer</string>
+    <string name="Exit">Exit</string>
+    <string name="email">Enter your email address:</string>
+    <string name="invalid">Invalid email address</string>
+    <string name="sendemail">Send mail...</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="EnterName">Enter Name of Session if you need to save records</string>
+    <string name="openwith">Choose an application to open file:</string>
+    <string name="announce">Announce to the audice/class the device IP:</string>
+    <string name="frequency">Frequency:</string>
+    <string name="Self">Self Vote</string>
+    <string name="Response">Response</string>
+    <string name="questionnumber">Question Number</string>
+    <string name="youranswer">Your answer/vote</string>
+    <string name="Total">Total</string>
+    <string name="Session">Session</string>
+    <string name="timestamp">Time</string>
+    <string name="num">Question </string>
+    <string name="thisip">ThisIP</string>
+    <string name="ResAns">Res\\Ans</string>
+    <string name="setting">Setting</string>
+    <string name="port">Enquirer and Responsor should use the same Service Port.</string>
+    <string name="allmsg">Response Details</string>
+    <string name="sender">Responser</string>
+    <string name="theip">IP</string>
+    <string name="isfile">Type</string>
+    <string name="status">Status</string>
+    <string name="resize">The shown number is the original width. Enter the width requested by Enquirer</string>
+    <string name="yes">OK</string>
+    <string name="no">Cancel</string>
+    <string name="resize0">Size Modification</string>
+    <string name="selfvote">Enquirer votes as a Responsor.</string>
+    <string name="paste">Copy-Paste</string>
+    <string name="parse">Separate</string>
+    <string name="wrongip">Ask the Enquirer for the correct IP and turn on listener</string>
+    <string name="listen">Still receiving message. Stop listening  before perform desired operation</string>
+    <string name="parseinstr">Copy paste question text to this textbox. If a question contains new line, use blank line to separate question from question. Otherwise, just use new line to  separate question from question.Finishing editing, tap the top "Separate" icon</string>
+    <string name="sessionname">Name </string>
+    <string name="progress">File Transmission Progress</string>
+    <string name="downloado">Offer Download</string>
+    <string name="download">Download</string>
+    <string name="download1">Actually Downloaded</string>
+    <string name="download0">No download filed offered from enquirer at this moment</string>
+    <string name="download2">Tap File icon to select files to share with Responsers. To remove items from the list,tap the check mark and Save before leave. </string>
+    <string name="download3">Contacting Enquirer to fetch a download list.</string>
+    <string name="keepfile">Keep</string>
+    <string name="nolonger">Requested file is no longer offered by Enquirer. This is the updated list</string>
+    <string name="sent">Sent</string>
+    <string name="upload">Upload</string>
+    <string name="downlist">Download list</string>
+    <string name="number">Number</string>
+    <string name="content">Response/File Name</string>
+    <string name="wait1">Please wait for complete of file transmission</string>
+    <string name="KB">KB</string>
+    <string name="choose">Choose an application to open with</string>
+    <string name="newquestion">New Question</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="newfile">Choose File</string>
+    <string name="send">Send</string>
+    <string name="camera">Camera</string>
+    <string name="listening">Start/Stop Listen</string>
+    <string name="merge">Merge</string>
+    <string name="tooffer">Pick Files to offer download</string>
+    <string name="namepin">Pin Permission Name/Id</string>
+    <string name="newuser">New User</string>
+    <string name="option">Refuse/ShortMsg/FullMsg/Download/UpDnload</string>
+    <string name="defaultpermit">Default Permit</string>
+    <string name="userinstr">1. A responser will be added to this list automatically at the first-time response, whose permit will be default. Both can be modified using tapping
+    2. You may also add a responser by tapping the top + icon then tell the responser in person, who can enter pin in Setting menu
+    3. To delete a responser from the list, tap the check mark to uncheck, then tap top Save icon   </string>
+    <string name="errorcode">No Permit|Not Saved|Sent|Interrupted</string>
+    <string name="allresponses">Pin and Permit</string>
+    <string name="portpass">Pin|Service Port</string>
+    <string name="record">Response Records</string>
+    <string name="preview">Preview </string>
+    <string name="parsetxt">Parse Text</string>
+    <string name="recordq">Record Question</string>
+    <string name="downloadname">File Name</string>
+    <string name="downloadpath">File Path</string>
+    <string name="asresponser">As Responser</string>
+    <string name="asenquirer">As Enquirer</string>
+    <string name="pinpermit">Pin | Permit</string>
+    <string name="stilllisten">Still listening. Stop listening before preview files</string>
+    <string name="neterror">No permit|Net Error|Timeout|Wrong IP</string>
+    <string name="second">second</string>
+    <string name="downall">Down Selected</string>
+    <string name="refresh">Refresh</string>
+    <string name="whysave">Without the permission of Saving Files from responsers, you can only receive text messages. Do you intend to grant the permission? </string>
+    <string name="nothanks">No Need</string>
+    <string name="question2">To delete records, tap the check mark on the tail, then Save</string>
+    <string name="detail2">Tapping column header to sort table by the column</string>
+    <string name="answer">Answer/Vote</string>
+    <string name="Answer">Answer</string>
+    <string name="receive">Receive</string>
+    <string name="file">File</string>
+    <string name="action">Action</string>
+    <string name="Detail">Detail</string>
+    <string name="SelfAnswer">Self Vote</string>
+    <string name="language">Language</string> 
+    <string name="setttinglabels">Language,Background Color,Foreground Color,Font Size,Data Folder,Upload Folder,Download Folder,Download-Serving Folder,Port Number</string>
+    <string name="Buddy">Buddy</string>
+    <string name="yours">Your Answer/File/Photo</string>
+    <string name="feed">Status/Reply</string>
+</resources>
+

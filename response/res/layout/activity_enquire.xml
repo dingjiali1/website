@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrollView"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#666666">
+        <Spinner
+            android:id="@+id/lblses"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+
+            android:textStyle="bold"
+            android:background="#eeeeee"
+            android:textColor="#7c1843"
+            android:layout_marginRight="1px"
+            />
+           <TextView
+            android:id="@+id/times"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="1px"
+            android:background="#eeeeee"
+            android:textColor="#7c1843"
+               android:padding="2dp"
+            android:text=" " />
+
+        <TextView
+            android:layout_marginRight="1px"
+                android:id="@+id/lblrip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+            android:textSize="18sp"
+
+            android:background="#eeeeee"
+            android:textColor="#7c1843"
+            android:padding="2dp"
+                android:text="@string/thisip" />
+
+            <TextView
+                 android:id="@+id/myip"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#eeeeee"
+                android:layout_marginRight="1px"
+                android:textColor="#0000ff"
+                android:padding="2dp"
+                android:text=" " />
+
+
+
+        </LinearLayout>
+
+
+
+            <TableLayout
+                android:id="@+id/maintable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#eeeeee"
+                android:stretchColumns="0,1,2,3,4,5">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1px"
+                    android:background="#7c1843"
+                   >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2px"
+                        android:background="#eeeeee"
+                        android:padding="0px"
+                        android:text="@string/num"
+                        android:textColor="#7c1843"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1px"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0px"
+                        android:background="#eeeeee"
+                        android:padding="2px"
+                        android:text="@string/ResAns"
+                        android:textColor="#7c1843"
+                        android:textSize="18sp" />
+
+                </TableRow>
+            </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instr"
+        android:textColor="#7c1843"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:textSize="16sp"
+        android:text="@string/instre"/>
+
+</LinearLayout>
+
+</HorizontalScrollView>
+</ScrollView>
+

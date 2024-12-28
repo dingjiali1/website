@@ -1,0 +1,234 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+import javax.swing.*;
+import javax.swing.border.MatteBorder;
+
+public class Datasheet extends javax.swing.JFrame {
+
+    private String filepath;
+    private int totalRows;
+
+    public Datasheet() {
+        initComponents0("C:\\Users\\27364\\Document\\csci121\\data-1.txt");
+    }
+
+    private void initComponents0(String filepath) {
+        this.filepath = filepath;
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(new File(filepath));
+        } catch (IOException e) {
+            System.out.println("File not exists: use the file path to the data.txt in HW3");
+            return;
+        }
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        Container contentpane = getContentPane();
+        GridBagLayout layout = new GridBagLayout();
+        contentpane.setLayout(layout);
+        GridBagConstraints c = new GridBagConstraints();
+        int row = 0, col = 0;
+        MatteBorder border = new MatteBorder(1, 3, 1, 4, Color.white);
+
+        // Create menu bar
+        JMenuBar menuBar = new JMenuBar();
+        JMenu fileMenu = new JMenu("File");
+        JMenuItem saveMenuItem = new JMenuItem("Save");
+        saveMenuItem.addActionListener((ActionEvent e) -> {
+saveData();
+        });
+        fileMenu.add(saveMenuItem);
+        menuBar.add(fileMenu);
+        setJMenuBar(menuBar);
+
+        while (scanner.hasNext()) {
+            String data = scanner.next();
+            c.gridx = col;
+            c.gridy = row;
+            c.weightx = 1;
+            c.weighty = 1.0;
+            c.anchor = GridBagConstraints.NORTHWEST;
+            c.insets = new Insets(0, 0, 1, 1);
+            c.fill = GridBagConstraints.BOTH;
+            c.gridheight = 1;
+            c.gridwidth = 1;
+            c.ipadx = 0;
+            c.ipady = 0;
+
+            if (row == 0) {
+                c.weighty = 0.3;
+                // Heading row
+                JLabel lbl = new JLabel(data);
+                lbl.setBackground(Color.white);
+                lbl.setOpaque(true);
+                lbl.setBorder(border);
+                lbl.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+                contentpane.add(lbl, c);
+            } else {
+                if (col == 1) {
+                    String[] items = {"id", "Grade", "Score", "Absence", "Time", "Start","SubQuiz","Order"}; 
+                    JComboBox<String> cmb = new JComboBox<>(items);
+                    cmb.setName("num" + row + "_" + col);
+                    contentpane.add(cmb, c);
+                } else {
+
+                    JTextField txt = new JTextField(data);
+                    txt.setName("num" + row + "_" + col);
+                    contentpane.add(txt, c);
+                }
+            }
+
+            col++;
+            if (col == 9) {
+                row++;
+                col = 0;
+            }
+        }
+        scanner.close();
+        totalRows = row;
+        setMinimumSize(new Dimension(400, 1500));
+        pack();
+    }
+
+    private void saveData() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int row = 0; row < totalRows; row++) {
+            for (int col = 0; col < 9; col++) {
+                Component component = get(row, col);
+                if (component != null) {
+                    if (component instanceof JTextField txt) {
+                        stringBuilder.append(txt.getText());
+                    } else if (component instanceof JComboBox) {
+                        JComboBox<String> cmb = (JComboBox<String>) component;
+                        stringBuilder.append(cmb.getSelectedItem());
+                    }
+                }
+                if (col < 8) {
+                    stringBuilder.append(","); 
+                }
+            }
+            stringBuilder.append("\n"); 
+        }
+
+        try {
+            try (FileWriter f = new FileWriter(filepath + "1")) {
+f.write(stringBuilder.toString());
+            }
+            JOptionPane.showMessageDialog(this, "Data saved successfully.");
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Error saving data: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private Component get(int row, int col) {
+        Component[] components = getContentPane().getComponents();
+        for (Component x : components) {
+            if (x.getName()!= null && x.getName().equals("num" + row + "_" + col)) {
+                return x;
+            }
+        }
+        return null;
+    }
+    @SuppressWarnings("unchecked")
+    public static void main(String args[]) {
+        new Datasheet().setVisible(true);
+    }
+}
+
+
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    //@SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jMenu1.setText("File");
+
+        jMenuItem1.setText("open");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("save");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+
+        //</editor-fold>
+
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    // End of variables declaration//GEN-END:variables
+

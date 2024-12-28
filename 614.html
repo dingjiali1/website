@@ -1,0 +1,67 @@
+<script>
+function congruence3(a,b,c)
+{
+	//ax~C(mod b)
+	let g=gcd(a,b);
+	if(c%g !=0)
+	{
+		document.write("congruence ax &equiv;c (mode b) has no solution)<br>");
+		return;
+	}
+	a/=g;
+	b/=g;
+	c/=g;
+	//a and b are coprime
+	a=a%b;
+	if(a===1)
+	{
+		c=c%b;
+		document.write("Solution is x &equiv;"+c+"(mod" +b+")<br>");
+		return;
+	}
+	let k=1;
+	while(true)
+	{
+		let c1=c+k*b;
+		if(c1%a===0)
+		{
+			c=c1/a;
+			c=c%b;
+			a=1;
+			break;
+		}
+		c2=c-k*b;
+		if(c2%a===0)
+		{
+			c=c2/a;
+			c=c%b;
+			a=1;			
+			break;
+		}
+		k++;
+}
+document.write("Solution is x &equiv;"+c+"(mod"+b+")<BR>");
+}
+function gcd(a,b)
+{
+	document.write(a+','+b+"<br>");
+	if(a===b)return a;
+	if(a>b)
+	{
+		return gcd(a-b,b);	
+	}
+	else
+		return gcd(a,b-a);	
+}
+congruence3(84,15,117);
+congruence3(5,8,127);
+congruence3(3,7,6);
+</script>
+
+
+
+
+         
+
+
+                  

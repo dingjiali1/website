@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7c1843"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbluid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:background="#eeeeee"
+                    android:padding="2dp"
+                    android:text="@string/uid"
+                    android:textColor="#7c1843"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtuid"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:layout_weight="0.5"
+                    android:background="#ffffff"
+                    android:padding="2dp"
+                    android:text="D        "
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/lblrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:background="#aaaaaa"
+                    android:padding="2dp"
+                    android:text="@string/rip"
+                    android:textColor="#7c1843"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:layout_weight="0.5"
+                    android:background="#ffffff"
+                    android:padding="2dp"
+                    android:text=" 0.8 "
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lblses0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:background="#eeeeee"
+                    android:padding="2dp"
+                    android:text="@string/Session"
+                    android:textColor="#7c1843"
+
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/lblses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:layout_weight="0.5"
+                    android:background="#eeeeee"
+                    android:padding="2dp"
+                    android:text="           "
+                    android:textColor="#7c1843"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/lbltimes0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:background="#eeeeee"
+                    android:padding="2dp"
+                    android:text="@string/timestamp"
+                    android:textColor="#7c1843"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/lbltimes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1px"
+                    android:layout_weight="0.5"
+                    android:background="#eeeeee"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textColor="#7c1843"
+                    android:textSize="16dp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/main_table"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/instr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingTop="6dp"
+            android:text="@string/instrr"
+            android:textColor="#7c1843"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+

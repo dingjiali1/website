@@ -1,0 +1,54 @@
+public class Person {
+
+   public final int MEN = 0;
+   public final int WOMAN = 1;
+   private String name;
+   private int age;
+   boolean adult = false;
+   static int numOfPersons = 0;
+
+   public Person(String name, int age) {
+       this.name = name;
+       this.age = age;
+       this.adult = age >=18;
+   }
+
+
+   public String getName() {
+       return name;
+   }
+
+   public int getAge() {
+       return age;
+   }
+
+   public void setName(String newName) {
+       name = newName;
+   }
+
+   public void setAge(int newAge) {
+       age = newAge;
+       adult = age >=18;
+   }
+   public static void main(String [] args)
+   {
+        Person p = new Person("John Smith", 17);
+        System.out.println(p.getName());
+        p.setAge(18);
+        System.out.println(p.getAge());
+   }
+}<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

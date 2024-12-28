@@ -1,0 +1,55 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#00cccc</item>
+        <item name="colorAccent">#00CCEE</item>
+        <item name="android:textColorPrimary">#7c1843</item>
+        <item name="android:textSize">20sp</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemBackground">#ffffff</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextAppearance</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextAppearance</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MenuTextAppearance" >
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">#ffffff</item>
+    </style>
+
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#224433</item>
+        <item name="android:textColorPrimary">#224433</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">3sp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">#eeeeee</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#ffffaa</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="MyPopUpMenu" >
+        <item name="android:background">#00BBBB</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">#ffffff</item>
+    </style>
+
+</resources>

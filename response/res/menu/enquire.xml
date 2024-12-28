@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EnquireActivity" android:id="@+id/mbar" >
+    <item  android:id="@+id/receive" android:icon="@drawable/ear" app:showAsAction="@string/action" android:title="@string/listening" />
+    <item  android:id="@+id/addq"  android:icon="@drawable/add"   app:showAsAction="@string/action"  android:title="@string/newquestion" />
+    <item  android:id="@+id/save"   android:icon="@drawable/save"   app:showAsAction="@string/file"  android:title="@string/save" />
+    <item  android:id="@+id/newm"   android:icon="@drawable/newm"  app:showAsAction="@string/file"  android:title="@string/New" />
+    <item  android:id="@+id/browse"   android:icon="@drawable/browse"  app:showAsAction="@string/file"  android:title="@string/Browse" />
+    <item  android:id="@+id/delete"  android:icon="@drawable/delete"   app:showAsAction="@string/file"  android:title="@string/Delete" />
+    <item  android:id="@+id/question"   android:icon="@drawable/question"   app:showAsAction="@string/action"   android:title="@string/question" />
+    <item  android:id="@+id/answer"   android:icon="@drawable/answer"   app:showAsAction="@string/action"  android:title="@string/Answer" />
+    <item  android:id="@+id/download"  android:icon="@drawable/distribute" app:showAsAction="@string/action"   android:title="@string/distribute" />
+    <item  android:id="@+id/detail"  android:icon="@drawable/detail"   app:showAsAction="@string/action"  android:title="@string/Detail" />
+    <item  android:id="@+id/selfans"  android:icon="@drawable/self"   app:showAsAction="@string/action"  android:title="@string/SelfAnswer" />
+    <item  android:id="@+id/setting"  android:icon="@drawable/setting" app:showAsAction="@string/action"   android:title="@string/setting" />
+    <item  android:id="@+id/user"   android:icon="@drawable/user"   app:showAsAction="@string/action"   android:title="@string/Buddy" />
+    <item  android:id="@+id/response"  android:icon="@drawable/resp"   app:showAsAction="@string/action"  android:title="@string/response" />
+    <item  android:id="@+id/exit"  android:icon="@drawable/exit"   app:showAsAction="@string/action"     android:title="@string/Exit" />
+
+</menu>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">询问应答</string>
+<string name="rip">询问者IP </string>
+<string name="uid">本人姓名/编号</string>
+<string name="appname">询问应答</string>
+<string name="instre">用于小考/投票/问卷调查/数据汇总/发文件：
+1.让应答者联到和你同一个WIFI/LAN网络上
+2.口头问/投影展示/点数字题号输入问题
+3.点击顶部“+Q”图标来添加更多问题
+4.可选地，在每个问题号下输入简答
+5.点击顶部“耳朵”图标开始接收应答
+6.在询问IP显示后告诉应答者
+7.会后，点击顶部“停耳朵”和顶部“保存”图标
+8.要切换角色，在菜单或工具条上选“做应答者”
+9.到市场上搜这个应用的移动版本
+</string>
+<string name="instrr">用于小考/投票/问卷调查/数据汇总/传文件：
+1.你的设备联到和询问者同一个WIFI/LAN网络上
+2.输入你的身份ID/姓名和询问者宣告的短IP
+3.听询问者宣告问题/要求，或点击题号看问题
+4.输入你对问题的的应答，点击->来发送
+5.送文件：点一个应答格，再点击顶部“文件”图标
+6.发相片：点一个应答格，再点击顶部“相机”图标
+</string>
+<string name="enquirer">询问</string>
+<string name="response">应答</string>
+<string name="question">问题</string>
+<string name="oral">可能已被口头询问或显示在投影屏幕上。你可在此记录</string>
+<string name="enterquestiontext">问题文本：</string>
+<string name="QuestionText">编辑问题</string>
+<string name="Enter">输入问题</string>
+<string name="wait">输入你的姓名或ID，以及询问者的短IP</string>
+<string name="enter">输入答案，然后点击 -> </string>
+<string name="Received">应答详情</string>
+<string name="NewSession">新建班组</string>
+<string name="New">新建班组</string>
+<string name="Browse">浏览记录</string>
+<string name="Delete">清除数据</string>
+<string name="Report">转寄报告</string>
+<string name="Enquirer">询问者</string>
+<string name="Exit">退出</string>
+<string name="email">输入你的电子邮件地址：</string>
+<string name="invalid">无效的电子邮件地址</string>
+<string name="sendemail">发送邮件... </string>
+<string name="OK">确认</string>
+<string name="Cancel">取消</string>
+<string name="EnterName">正在离开询问界面。如果要保存记录，输入本次交流的名称</string>
+<string name="openwith">选择要打开此文件的应用程序：</string>
+<string name="announce">向应答者宣布询问者IP（即此设备IP）：</string>
+<string name="frequency">频率：</string>
+<string name="Self">自己投票</string>
+<string name="Response">应答</string>
+<string name="questionnumber">问题编号</string>
+    <string name="youranswer">你的投票或应答</string>
+<string name="Total">总计</string>
+<string name="Session">班会群组</string>
+<string name="timestamp">时间</string>
+    <string name="num">问题</string>
+<string name="thisip">询问者IP</string>
+<string name="ResAns">应答\\答案</string>
+<string name="setting">设置</string>
+<string name="port">一般不要修改服务端口，除非其他应用用此端口。询问者和应答者要协调使用相同的服务端口</string>
+<string name="allmsg">应答详情</string>
+<string name="sender">应答者</string>
+<string name="theip">地址</string>
+<string name="isfile">类型</string>
+<string name="status">传输状态</string>
+ <string name="resize">以下数字是原图的宽度。可修改为询问者要求的宽度</string>
+<string name="yes">确认</string>
+<string name="no">取消</string>
+<string name="resize0">修改尺寸</string>
+<string name="selfvote">询问者本人作为应答者投票</string>
+ <string name="paste">粘贴</string>
+<string name="parse">分开</string>
+<string name="wrongip">让询问着准备收信并告诉你他的短IP</string>
+<string name="parseinstr">将从别处拷贝来的问题文本粘贴到此。 如果问题本身包含换行符，请使用空白行将问题分开。 否则，只需使用换行符将问题分开。编辑好了以后点顶部“分隔”图标</string>
+ <string name="listen" >还处在接收应答状态。要先停止接收才能做这个操作。</string>
+    <string name="sessionname">名称</string>
+    <string name="progress">文件传输进展</string>
+    <string name="downloado">提供下载</string>
+    <string name="download">下载文件</string>
+    <string name="download0">此时询问者没有提供下载文件</string>
+    <string name="download1">已经下载</string>
+    <string name="download2">点顶部文件图标选取文件来分享给应答者。点勾记来移除文件出清单，按顶部保存</string>
+    <string name="download3">联系询问者要一份其提供的下载资源清单</string>
+    <string name="keepfile">保留</string>
+    <string name="nolonger">询问者不再提供你刚试图下载的文件。这是更新的下载清单</string>
+    <string name="sent">已送达</string>
+    <string name="upload">上传</string>
+    <string name="downlist">下载清单</string>
+    <string name="number">编号</string>
+    <string name="content">内容/文件名</string>
+    <string name="wait1">在传输文件，请稍侯</string>
+    <string name="KB">仟</string>
+    <string name="choose">选一个合适的应用来打开文件</string>
+    <string name="newquestion">添加问题</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="newfile">选文件</string>
+    <string name="send">递送</string>
+    <string name="camera">开相机</string>
+    <string name="listening">开/停接收</string>
+    <string name="merge">合成</string>
+   <string name="tooffer">选取文件提供给应答者下载</string>
+   <string name="namepin">密钥 权限 姓名/编号</string>
+    <string name="newuser">添加应答</string>
+    <string name="option">拒绝交流/发短消息/消息不限/允许下载/上传下载</string>
+    <string name="defaultpermit">默认权限</string>
+    <string name="userinstr">1. 应答者首次应答时会被自动添加到这份名单，其权限会是默认权限。两者均可被点选修改。
+
+    2. 你也可点顶部的+图标来添加应答者，然后当面告诉应答者。他可到设置菜单中输入你告诉的密钥
+
+    3. 为删除一个或多个应答者，点行相应行尾的勾记，再点顶部的保存图标退出
+    </string>
+    <string name="errorcode">权限不够|不能保存|已送达|传输中断</string>
+    <string name="allresponses">密钥权限</string>
+    <string name="portpass">密钥|服务端口</string>
+    <string name="record">应答记录</string>
+    <string name="preview">相片预览</string>
+    <string name="parsetxt">文本分折</string>
+    <string name="recordq">记录问题</string>
+    <string name="downloadname">文件名称</string>
+    <string name="downloadpath">文件路径</string>
+    <string name="asresponser">做应答者</string>
+    <string name="asenquirer">做询问者</string>
+    <string name="pinpermit">密钥权限</string>
+    <string name="stilllisten">还在接收应答状态。要关停接收才能预览文件</string>
+    <string name="neterror">权限不够|联网出错|超时|错IP</string>
+    <string name="second">秒</string>
+    <string name="downall">批量下载</string>
+    <string name="refresh">刷新清单</string>
+    <string name="whysave">有时应答者要上传文件，要你授予保存文件的许可，否则你只能收短消息。你有意保存文件吗? </string>
+    <string name="nothanks">不要</string>
+    <string name="question2">如要删掉记录，点行尾的勾记，再其变为叉，再保存</string>
+    <string name="detail2">点每列的顶部列的名称可按该列排序</string>
+    <string name="answer">答案/回应/投票</string>
+    <string name="Answer">答案</string>
+    <string name="receive">询问角色</string>
+    <string name="file">文件</string>
+    <string name="action">操作</string>
+    <string name="Detail">具体</string>
+    <string name="SelfAnswer">自身投票</string>
+    <string name="language">语言</string> 
+    <string name="setttinglabels">语言,背景颜色,字体颜色,字体大小,数据文件夹,上传文件夹,下载文件夹,下载服务文件夹,端口</string> 
+    <string name="Buddy">全部应答</string>
+    <string name="yours">你的应答/文件/照像</string>
+    <string name="feed">回复或状态</string>
+    <string name="distribute">分发文件</string>
+</resources>

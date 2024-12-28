@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GalleryActivity">
+    <item  android:id="@+id/prev" android:icon="@drawable/prev" app:showAsAction="always" android:title="@string/back" />
+    <item  android:id="@+id/comm" android:icon="@drawable/browse" app:showAsAction="always" android:title="@string/send" />
+
+</menu>
